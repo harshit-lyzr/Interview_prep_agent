@@ -27,8 +27,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# image = Image.open("lyzr-logo.png")
-# st.image(image, width=150)
+image = Image.open("lyzr-logo.png")
+st.image(image, width=150)
 
 # App title and introduction
 st.title("Lyzr Interview Preparation Agent")
