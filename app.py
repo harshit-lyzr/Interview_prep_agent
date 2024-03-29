@@ -34,7 +34,7 @@ st.image(image, width=150)
 st.title("Lyzr Interview Preparation Agent")
 st.markdown("### Welcome to the Lyzr Interview Preparation Agent!")
 
-query=st.text_input("Enter your Job Description: ")
+query=st.text_area("Enter your Job Description: ")
 
 open_ai_text_completion_model = OpenAIModel(
     api_key=api,
@@ -44,11 +44,6 @@ open_ai_text_completion_model = OpenAIModel(
         "max_tokens": 1500,
     },
 )
-
-prompt="""You are an expert school leader, highly skilled in recruitment, employee management and retainment,
- decision making, organization, and interview skills. Your task is to draft 10-15 questions for a potential first grade 
- Head Teacher for my K-12, all-girls',
- independent school that emphasizes community, joyful discovery, and life-long learning."""
 
 def interview_questions(query):
 
